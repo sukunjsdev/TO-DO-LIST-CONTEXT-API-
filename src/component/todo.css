@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body.dark {
+  color: white;
+  background-color: black;
+}
+body.dark .search-bar input {
+  background-color: black;
+  border: 1px solid white;
+  color:white;
+}
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.top-header-btns {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-bar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 75%;
+}
+.search-bar input {
+  height: 2.2rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #6c63ff;
+  padding-left: 15px;
+}
+.search-bar img {
+  position: absolute;
+  right: 10px;
+}
+.select-btn {
+  width: 5rem;
+  height: 100%;
+  background-color: #6c63ff;
+  color: white;
+  border-radius: 3px;
+}
+.select-btn option {
+  background-color: white;
+  color: #6c63ff;
+  font-size: small;
+}
+.moonbtn {
+  width: auto;
+  height: 100%;
+  background-color: #6c63ff;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.top-btns {
+  justify-content: center;
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.unorder-list {
+  margin-top: 2rem;
+  width: 95%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-side {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  align-items: center;
+  font-size: 20px;
+}
+.right-side {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #6c63ff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #6c63ff;
+  border: 2px solid #6c63ff;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: white;
+  font-size: 15px;
+  position: relative;
+  left: 5px;
+  top: 0px;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.right-side img {
+  cursor: pointer;
+}
+.addbtn {
+  background-color: #6c63ff;
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
