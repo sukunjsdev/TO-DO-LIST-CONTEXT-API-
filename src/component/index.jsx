@@ -1,10 +1,10 @@
-import vector from "../assets/Vector.svg";
+import searchlight from "../assets/searchlight.svg";
 import moon from "../assets/moontheme.svg";
 import editbtn from "../assets/edit.svg";
 import deletebtn from "../assets/delete.svg";
 import addbtn from "../assets/addbtn.svg";
 import sun from "../assets/suntheme.svg";
-import vector2 from "../assets/Vector2.svg";
+import searchdark from "../assets/searchdark.svg";
 import { useContext, useState } from "react";
 import "./todo.css";
 import { Contextapi } from "../context/context";
@@ -47,7 +47,7 @@ export const Index = () => {
             />
             <img
               className="search-btn"
-              src={darkMode ? vector2 : vector}
+              src={darkMode ? searchdark : searchlight}
               alt=""
             />
           </div>
